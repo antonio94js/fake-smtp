@@ -14,7 +14,7 @@ import slack from '../lib/SlackHandler';
 import co from 'co';
 import request from 'request';
 
-const port =  3000;
+const port = process.env.PORT || 80;
 
 let server = new SMTPServer({
 	secure: false,

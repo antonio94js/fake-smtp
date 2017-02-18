@@ -1,2 +1,2 @@
 import './core/smtp';
-import './core/app';
+// import './core/app';
