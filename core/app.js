@@ -23,7 +23,7 @@ app.use(function(err, req, res, next) {
     res.status(500).json(err);
 });
 
-const server = app.listen(app.get('port'),'0.0.0.0', (error) => {
+const server = app.listen(app.get('port'), (error) => {
     if (error)
         throw error;
     else
