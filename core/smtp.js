@@ -76,7 +76,7 @@ const _processAttachments = (attachment) => {
 	return attachment;
 };
 
-server.listen(port);
+server.listen(port, process.env.HOST || 'localhost');
 
 server.on('error', err => {
 	console.error('Error %s', err.message);

@@ -2,9 +2,9 @@ import express from 'express';
 import path from 'path';
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 80;
 
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 80);
 
 app.use(express.static(path.join(__dirname, '../assets')));
 // console.log(path.join(__dirname, '../assets'));
