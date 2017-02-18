@@ -7,6 +7,10 @@ const port = process.env.PORT || 80;
 app.set('port', process.env.PORT || 80);
 
 app.use(express.static(path.join(__dirname, '../assets')));
+
+app.get('/test',function (req,res,next) {
+    res.status(200).json({message:"everything is fine from azure"})
+});
 // console.log(path.join(__dirname, '../assets'));
 
 app.use(function(req, res, next) {
